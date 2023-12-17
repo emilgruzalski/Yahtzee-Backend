@@ -1,4 +1,4 @@
-namespace PokerDice.WebAPI
+namespace PokerDice.API
 {
     public class WeatherForecast
     {
