@@ -361,3 +361,7 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# NLog
+Yahtzee.API/logs
+Yahtzee.API/internal_logs

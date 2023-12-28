@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yahtzee.API", "Yahtzee.API\Yahtzee.API.csproj", "{6EC2D9A2-65F2-4657-94C4-372DB87B923B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Yahtzee.API", "Yahtzee.API\Yahtzee.API.csproj", "{6EC2D9A2-65F2-4657-94C4-372DB87B923B}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{4C335378-13B2-4E50-AB48-0B8B8182B649}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yahtzee.Contracts", "Yahtzee.Contracts\Yahtzee.Contracts.csproj", "{8934AA76-2858-44B0-9636-FD3C3F74E88D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yahtzee.LoggerService", "Yahtzee.LoggerService\Yahtzee.LoggerService.csproj", "{0FBF0006-408A-4F17-973B-E0A55E83B90F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{4C335378-13B2-4E50-AB48-0B8B8182B649}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C335378-13B2-4E50-AB48-0B8B8182B649}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C335378-13B2-4E50-AB48-0B8B8182B649}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8934AA76-2858-44B0-9636-FD3C3F74E88D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8934AA76-2858-44B0-9636-FD3C3F74E88D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8934AA76-2858-44B0-9636-FD3C3F74E88D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8934AA76-2858-44B0-9636-FD3C3F74E88D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FBF0006-408A-4F17-973B-E0A55E83B90F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FBF0006-408A-4F17-973B-E0A55E83B90F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FBF0006-408A-4F17-973B-E0A55E83B90F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FBF0006-408A-4F17-973B-E0A55E83B90F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
