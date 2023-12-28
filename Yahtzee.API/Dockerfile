@@ -9,17 +9,17 @@ EXPOSE 8081
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["PokerDice.API/PokerDice.API.csproj", "PokerDice.API/"]
-RUN dotnet restore "./PokerDice.API/./PokerDice.API.csproj"
+COPY ["Yahtzee.API/Yahtzee.API.csproj", "Yahtzee.API/"]
+RUN dotnet restore "./Yahtzee.API/./Yahtzee.API.csproj"
 COPY . .
-WORKDIR "/src/PokerDice.API"
-RUN dotnet build "./PokerDice.API.csproj" -c $BUILD_CONFIGURATION -o /app/build
+WORKDIR "/src/Yahtzee.API"
+RUN dotnet build "./Yahtzee.API.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 FROM build AS publish
 ARG BUILD_CONFIGURATION=Release
-RUN dotnet publish "./PokerDice.API.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "./Yahtzee.API.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "PokerDice.API.dll"]
+ENTRYPOINT ["dotnet", "Yahtzee.API.dll"]

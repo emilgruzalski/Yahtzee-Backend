@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace PokerDice.API.Controllers
+namespace Yahtzee.API.Controllers
 {
     [ApiController]
     [Route("[controller]")]

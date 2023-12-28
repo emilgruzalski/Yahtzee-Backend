@@ -4,7 +4,8 @@
       "commandName": "DockerCompose",
       "commandVersion": "1.0",
       "serviceActions": {
-        "pokerdice.api": "StartDebugging"
+        "pokerdice.api": "StartDebugging",
+        "yahtzee.api": "StartDebugging"
       }
     }
   }

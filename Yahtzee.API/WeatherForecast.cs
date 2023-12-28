@@ -1,4 +1,4 @@
-namespace PokerDice.API
+namespace Yahtzee.API
 {
     public class WeatherForecast
     {

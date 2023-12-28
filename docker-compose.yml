@@ -1,23 +1,22 @@
 version: '3.4'
 
 services:
-  pokerdice.api:
-    image: ${DOCKER_REGISTRY-}pokerdiceapi
+  yahtzee.api:
+    image: ${DOCKER_REGISTRY-}yahtzeeapi
     build:
       context: .
-      dockerfile: PokerDice.API/Dockerfile
+      dockerfile: Yahtzee.API/Dockerfile
 
-  pokerdice.db:
+  yahtzee.db:
     image: mysql:8.2
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: pokerdice
-      MYSQL_DATABASE: pokerdice
+      MYSQL_ROOT_PASSWORD: yahtzee
+      MYSQL_DATABASE: yahtzee
     ports:
       - "3306:3306"
     volumes:
-      - pokerdice.db-data:/var/lib/mysql
+      - yahtzee.db-data:/var/lib/mysql
 
 volumes:
-  pokerdice.db-data:
-
+  yahtzee.db-data:

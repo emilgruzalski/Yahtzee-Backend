@@ -1,0 +1,6 @@
+@Yahtzee.API_HostAddress = http://localhost:5105
+
+GET {{Yahtzee.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
