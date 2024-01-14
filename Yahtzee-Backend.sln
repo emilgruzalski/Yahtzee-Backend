@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yahtzee.Contracts", "Yahtze
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yahtzee.LoggerService", "Yahtzee.LoggerService\Yahtzee.LoggerService.csproj", "{0FBF0006-408A-4F17-973B-E0A55E83B90F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yahtzee.Entities", "Yahtzee.Entities\Yahtzee.Entities.csproj", "{07193C76-6C37-434A-8708-07B4EB110FF5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{0FBF0006-408A-4F17-973B-E0A55E83B90F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0FBF0006-408A-4F17-973B-E0A55E83B90F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0FBF0006-408A-4F17-973B-E0A55E83B90F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07193C76-6C37-434A-8708-07B4EB110FF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07193C76-6C37-434A-8708-07B4EB110FF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07193C76-6C37-434A-8708-07B4EB110FF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07193C76-6C37-434A-8708-07B4EB110FF5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
